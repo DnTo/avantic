@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AppGrupoAvantic.iml" filepath="$PROJECT_DIR$/.idea/modules/AppGrupoAvantic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppGrupoAvantic.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppGrupoAvantic.app.iml" />
+    </modules>
+  </component>
+</project>
