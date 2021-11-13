@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">AppGrupoAvantic</string>
+    <string name="pereira">Pereira</string>
+    <string name="turismo_avantic">Turismo Avantic</string>
+    <string name="descripcion_estado">Pereira es un municipio colombiano, capital del departamento de Risaralda. Es la ciudad más poblada de la región del eje cafetero; conforma el Área Metropolitana de Centro Occidente junto con los municipios de Dosquebradas y La Virginia. Está ubicada en la región centro-occidente del país, en el valle del río Otún en la Cordillera Central de los Andes colombianos.</string>
+    <string name="puntos_de_inter_s">Sitios recomendados</string>
+    <string name="_1411_msnm">1411 msnm</string>
+    <string name="_477k_habitantes">477K habitantes</string>
+    <string name="_28">28°</string>
+    <string name="todo">TODO</string>
+    <string name="plaza_bol_var">Plaza Bolívar</string>
+    <string name="catedral">Catedral de Nuestra Señora de la Pobreza de Pereira</string>
+    <string name="descripcionsitio1">Es el parque más grande de Pereira y Patrimonio Municipal, fue creado en la década de 1930, es un lugar de mucha importancia para la ciudad</string>
+    <string name="parque_olaya_herrera">Parque Olaya Herrera</string>
+    <string name="descripcionsitio2">Es el principal templo de la diócesis de Pereira y fue elevado a catedral el 18 de diciembre de 1952 por bula del papa Pío XII.</string>
+    <string name="localizada_en_las_calles_19_y_20_entre_las_carreras_s_ptima_y_octava_frente_a_la_catedral_de_nuestra_se_ora_de_la_pobreza_es_famosa_por_su_monumento_del_bol_var_desnudo">Localizada en las calles 19 y 20, entre las carreras Séptima y Octava, frente a la Catedral de Nuestra Señora de la Pobreza, es famosa por su monumento del Bolívar Desnudo</string>
+    <string name="weatericon">weatericon</string>
+    <string name="populationicon">populationicon</string>
+    <string name="altitudeicon">altitudeicon</string>
+    <string name="temperatura">28° C</string>
+    <string name="sitiosrecomendados">Sitios recomendados</string>
+    <string name="textview">TextView</string>
+    <string name="sitio1">sitio1</string>
 </resources>
