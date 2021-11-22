@@ -1,0 +1,36 @@
+
+<resources>
+    <string name="app_name">Avantic</string>
+    <string name="add_flower">Agregar POI</string>
+
+    <string name="flower1_name">Poi1</string>
+    <string name="flower2_name">Poi2</string>
+    <string name="flower3_name">Poi3</string>
+    <string name="flower4_name">Poi4</string>
+    <string name="flower5_name">Poi5</string>
+    <string name="flower6_name">Daisy</string>
+    <string name="flower7_name">Lilac</string>
+    <string name="flower8_name">Marigold</string>
+    <string name="flower9_name">Poppy</string>
+    <string name="flower10_name">Daffodil</string>
+    <string name="flower11_name">Dahlia</string>
+    <string name="flower12_name">Tulip</string>
+
+    <string name="flower1_description">Descripcion. </string>
+    <string name="flower2_description">Descripcion..</string>
+    <string name="flower3_description">Descripcion..</string>
+    <string name="flower4_description">Descripcion.</string>
+    <string name="flower5_description">Descripcion..</string>
+
+
+    <string name="flower_string">Puntos de Interes</string>
+    <string name="flower_finder">Lista de POIs</string>
+    <string name="flower_description_edit_text">Flower Description</string>
+    <string name="flower_name_edit_text">Flower Name</string>
+    <string name="done_button_text">Done</string>
+    <string name="fab_content_description">fab</string>
+    <string name="flower_image_content_description">Image of flower</string>
+    <string name="remove_this_flower">Remover</string>
+    <string name="poi_rate">poi_rate</string>
+
+</resources>

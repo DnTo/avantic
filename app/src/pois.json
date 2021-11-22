@@ -1,0 +1,44 @@
+[
+  {
+    "description": "Descripcion.",
+    "id": 1,
+    "image": 2131165329,
+    "name": "Poi1",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion..",
+    "id": 2,
+    "image": 2131165330,
+    "name": "Poi2",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion..",
+    "id": 3,
+    "image": 2131165331,
+    "name": "Poi3",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion.",
+    "id": 4,
+    "image": 2131165332,
+    "name": "Poi4",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion..",
+    "id": 5,
+    "image": 2131165333,
+    "name": "Poi5",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion..",
+    "id": 6,
+    "image": 2131165333,
+    "name": "Poi6",
+    "rate": 0.0
+  }
+]

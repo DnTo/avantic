@@ -1,0 +1,44 @@
+[
+  {
+    "description": "Descripcion1.",
+    "id": 1,
+    "image": ,
+    "name": "Poi1",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion.2.",
+    "id": 2,
+    "image": ,
+    "name": "Poi2",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion3..",
+    "id": 3,
+    "image": ,
+    "name": "Poi3",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion4.",
+    "id": 4,
+    "image": ,
+    "name": "Poi4",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion.5.",
+    "id": 5,
+    "image": ,
+    "name": "Poi5",
+    "rate": 0.0
+  },
+  {
+    "description": "Descripcion.6.",
+    "id": 6,
+    "image": ,
+    "name": "Poi6",
+    "rate": 0.0
+  }
+]
