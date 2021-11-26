@@ -26,14 +26,14 @@ import com.avantic.pois.R
 /* A list always displaying one element: the number of flowers. */
 
 class HeaderAdapter: RecyclerView.Adapter<HeaderAdapter.HeaderViewHolder>() {
-    private var flowerCount: Int = 0
+    private var poiCount: Int = 0
 
     /* ViewHolder for displaying header. */
     class HeaderViewHolder(view: View) : RecyclerView.ViewHolder(view){
-        private val flowerNumberTextView: TextView = itemView.findViewById(R.id.flower_number_text)
+        private val poiNumberTextView: TextView = itemView.findViewById(R.id.poi_number_text)
 
         fun bind(flowerCount: Int) {
-            flowerNumberTextView.text = flowerCount.toString()
+            poiNumberTextView.text = flowerCount.toString()
         }
     }
 
@@ -46,7 +46,7 @@ class HeaderAdapter: RecyclerView.Adapter<HeaderAdapter.HeaderViewHolder>() {
 
     /* Binds number of flowers to the header. */
     override fun onBindViewHolder(holder: HeaderViewHolder, position: Int) {
-        holder.bind(flowerCount)
+        holder.bind(poiCount)
     }
 
     /* Returns number of items, since there is only one item in the header return one  */
@@ -55,8 +55,8 @@ class HeaderAdapter: RecyclerView.Adapter<HeaderAdapter.HeaderViewHolder>() {
     }
 
     /* Updates header to display number of flowers when a flower is added or subtracted. */
-    fun updateFlowerCount(updatedFlowerCount: Int) {
-        flowerCount = updatedFlowerCount
+    fun updatePOICount(updatedPOICount: Int) {
+        poiCount = updatedPOICount
         notifyDataSetChanged()
     }
 }

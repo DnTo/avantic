@@ -17,52 +17,51 @@
 package com.avantic.pois.flowerDetail
 
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.avantic.pois.R
-import com.avantic.pois.flowerList.FLOWER_ID
+import com.avantic.pois.flowerList.POI_ID
 
-class FlowerDetailActivity : AppCompatActivity() {
+class POIDetailActivity : AppCompatActivity() {
 
-    private val flowerDetailViewModel by viewModels<FlowerDetailViewModel> {
-        FlowerDetailViewModelFactory(this)
+    private val POIDetailViewModel by viewModels<POIDetailViewModel> {
+        POIDetailViewModelFactory(this)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.flower_detail_activity)
+        setContentView(R.layout.poi_detail_activity)
 
 
-        var currentFlowerId: Long? = null
+        var currentPOIId: Long? = null
 
         /* Connect variables to UI elements. */
-        val flowerName: TextView = findViewById(R.id.flower_detail_name)
-        val flowerImage: ImageView = findViewById(R.id.flower_detail_image)
-        val flowerDescription: TextView = findViewById(R.id.flower_detail_description)
+        val poiName: TextView = findViewById(R.id.poi_detail_name)
+        val poiImage: ImageView = findViewById(R.id.poi_detail_image)
+        val poiDescription: TextView = findViewById(R.id.poi_detail_description)
         val poiRate: TextView = findViewById(R.id.poi_rate)
         //val removeFlowerButton: Button = findViewById(R.id.remove_button)
 
         val bundle: Bundle? = intent.extras
         if (bundle != null) {
-            currentFlowerId = bundle.getLong(FLOWER_ID)
+            currentPOIId = bundle.getLong(POI_ID)
         }
 
         /* If currentFlowerId is not null, get corresponding flower and set name, image and
         description */
-        currentFlowerId?.let {
-            val currentFlower = flowerDetailViewModel.getFlowerForId(it)
-            flowerName.text = currentFlower?.name
-            if (currentFlower?.image == null) {
-                flowerImage.setImageResource(R.drawable.poi1)
+        currentPOIId?.let {
+            val currentPOI = POIDetailViewModel.getPOIForId(it)
+            poiName.text = currentPOI?.name
+            if (currentPOI?.image == null) {
+                poiImage.setImageResource(R.drawable.poi1)
             } else {
-                flowerImage.setImageResource(currentFlower.image)
+                poiImage.setImageResource(currentPOI.image)
               //  flowerImage.seti
             }
-            flowerDescription.text = currentFlower?.description
-            poiRate.text = currentFlower?.rate.toString()
+            poiDescription.text = currentPOI?.description
+            poiRate.text = currentPOI?.rate.toString()
 
 //            removeFlowerButton.setOnClickListener {
 //                if (currentFlower != null) {

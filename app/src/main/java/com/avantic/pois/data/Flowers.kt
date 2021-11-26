@@ -3,11 +3,10 @@
 package com.avantic.pois.data
 
 import android.content.res.Resources
-import com.avantic.pois.R
 
 /* Returns initial list of flowers. */
-fun flowerList(resources: Resources): List<Flower> {
-    return listOf(Flower(0,"",0,"",0.0f))
+fun poiList(resources: Resources): List<POI> {
+    return listOf(POI(0,"",0,"",0.0f))
 //        Flower(
 //            id = 1,
 //            name = resources.getString(R.string.flower1_name),

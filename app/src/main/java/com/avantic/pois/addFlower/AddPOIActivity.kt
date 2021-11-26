@@ -10,38 +10,38 @@ import androidx.appcompat.app.AppCompatActivity
 import com.avantic.pois.R
 import com.google.android.material.textfield.TextInputEditText
 
-const val FLOWER_NAME = "name"
-const val FLOWER_DESCRIPTION = "description"
+const val POI_NAME = "name"
+const val POI_DESCRIPTION = "description"
 
-class AddFlowerActivity : AppCompatActivity() {
-    private lateinit var addFlowerName: TextInputEditText
-    private lateinit var addFlowerDescription: TextInputEditText
+class AddPOIActivity : AppCompatActivity() {
+    private lateinit var addPOIName: TextInputEditText
+    private lateinit var addPOIDescription: TextInputEditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.add_flower_layout)
+        setContentView(R.layout.add_poi_layout)
 
         findViewById<Button>(R.id.done_button).setOnClickListener {
-            addFlower()
+            addPOI()
         }
-        addFlowerName = findViewById(R.id.add_flower_name)
-        addFlowerDescription = findViewById(R.id.add_flower_description)
+        addPOIName = findViewById(R.id.add_poi_name)
+        addPOIDescription = findViewById(R.id.add_poi_description)
     }
 
     /* The onClick action for the done button. Closes the activity and returns the new flower name
     and description as part of the intent. If the name or description are missing, the result is set
     to cancelled. */
 
-    private fun addFlower() {
+    private fun addPOI() {
         val resultIntent = Intent()
 
-        if (addFlowerName.text.isNullOrEmpty() || addFlowerDescription.text.isNullOrEmpty()) {
+        if (addPOIName.text.isNullOrEmpty() || addPOIDescription.text.isNullOrEmpty()) {
             setResult(Activity.RESULT_CANCELED, resultIntent)
         } else {
-            val name = addFlowerName.text.toString()
-            val description = addFlowerDescription.text.toString()
-            resultIntent.putExtra(FLOWER_NAME, name)
-            resultIntent.putExtra(FLOWER_DESCRIPTION, description)
+            val name = addPOIName.text.toString()
+            val description = addPOIDescription.text.toString()
+            resultIntent.putExtra(POI_NAME, name)
+            resultIntent.putExtra(POI_DESCRIPTION, description)
             setResult(Activity.RESULT_OK, resultIntent)
         }
         finish()

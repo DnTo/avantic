@@ -5,28 +5,28 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.avantic.pois.data.DataSource
-import com.avantic.pois.data.Flower
+import com.avantic.pois.data.POI
 
 
-class FlowerDetailViewModel(private val datasource: DataSource) : ViewModel() {
+class POIDetailViewModel(private val datasource: DataSource) : ViewModel() {
 
     /* Queries datasource to returns a flower that corresponds to an id. */
-    fun getFlowerForId(id: Long) : Flower? {
-        return datasource.getFlowerForId(id)
+    fun getPOIForId(id: Long) : POI? {
+        return datasource.getPOIForId(id)
     }
 
     /* Queries datasource to remove a flower. */
-    fun removeFlower(flower: Flower) {
-        datasource.removeFlower(flower)
+    fun removePOI(poi: POI) {
+        datasource.removePOI(poi)
     }
 }
 
-class FlowerDetailViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
+class POIDetailViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(FlowerDetailViewModel::class.java)) {
+        if (modelClass.isAssignableFrom(POIDetailViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
-            return FlowerDetailViewModel(
+            return POIDetailViewModel(
                 datasource = DataSource.getDataSource(context.resources)
             ) as T
         }
