@@ -18,8 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".addFlower.AddFlowerActivity" />
-        <activity android:name=".flowerDetail.FlowerDetailActivity" />
+        <activity android:name=".addFlower.AddPOIActivity" />
+        <activity android:name=".flowerDetail.POIDetailActivity" />
     </application>
 
 </manifest>

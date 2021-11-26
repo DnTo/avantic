@@ -18,7 +18,7 @@ package com.avantic.pois.data
 
 import androidx.annotation.DrawableRes
 
-data class Flower(
+data class POI(
     val id: Long,
     val name: String,
     @DrawableRes

@@ -23,8 +23,8 @@
     <string name="flower5_description">Descripcion..</string>
 
 
-    <string name="flower_string">Puntos de Interes</string>
-    <string name="flower_finder">Lista de POIs</string>
+    <string name="sitios_destacados">Sitios destacados</string>
+    <string name="lugares_interes">Lugares de interés</string>
     <string name="flower_description_edit_text">Flower Description</string>
     <string name="flower_name_edit_text">Flower Name</string>
     <string name="done_button_text">Done</string>

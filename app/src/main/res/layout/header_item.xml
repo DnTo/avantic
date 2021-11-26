@@ -23,11 +23,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/flower_finder"
+        android:text="@string/lugares_interes"
         android:textAppearance="?attr/textAppearanceHeadline3" />
 
     <TextView
-        android:id="@+id/flower_number_text"
+        android:id="@+id/poi_number_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/flower_string"
+        android:text="@string/sitios_destacados"
         android:textAppearance="?attr/textAppearanceHeadline6" />
 
 </LinearLayout>

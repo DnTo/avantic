@@ -6,12 +6,12 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.avantic.pois.data.DataSource
-import com.avantic.pois.data.Flower
+import com.avantic.pois.data.POI
 import kotlin.random.Random
 
 class FlowersListViewModel(val dataSource: DataSource) : ViewModel() {
 
-    val flowersLiveData = dataSource.getFlowerList()
+    val flowersLiveData = dataSource.getPOIList()
 
     /* If the name and description are present, create new Flower and add it to the datasource */
     fun insertFlower(flowerName: String?, flowerDescription: String?,puntuacion:Float) {
@@ -19,8 +19,8 @@ class FlowersListViewModel(val dataSource: DataSource) : ViewModel() {
             return
         }
 
-        val image = dataSource.getRandomFlowerImageAsset()
-        val newFlower = Flower(
+        val image = dataSource.getRandomPOIImageAsset()
+        val newFlower = POI(
             Random.nextLong(),
             flowerName,
             image,

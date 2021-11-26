@@ -17,72 +17,67 @@
 package com.avantic.pois.data
 
 import android.content.res.Resources
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.google.gson.Gson
-import java.io.File
-import java.io.InputStream
-import 	android.content.ContextWrapper
-import android.content.res.AssetManager
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type
 
 
 /* Handles operations on flowersLiveData and holds details about it. */
 class DataSource(resources: Resources) {
-    private val initialFlowerList = listOf(Flower(0,"",0,"",0.0f))
+    private val initialPOIList = listOf(POI(0,"",0,"",0.0f))
         //flowerList(resources)
-    private val flowersLiveData = MutableLiveData(initialFlowerList)
+    private val poiLiveData = MutableLiveData(initialPOIList)
 
     private val context = resources
 
     /* Adds flower to liveData and posts value. */
-    fun addFlower(flower: Flower) {
-        val currentList = flowersLiveData.value
+    fun addFlower(poi: POI) {
+        val currentList = poiLiveData.value
         if (currentList == null) {
-            flowersLiveData.postValue(listOf(flower))
+            poiLiveData.postValue(listOf(poi))
         } else {
             val updatedList = currentList.toMutableList()
-            updatedList.add(0, flower)
-            flowersLiveData.postValue(updatedList)
+            updatedList.add(0, poi)
+            poiLiveData.postValue(updatedList)
         }
     }
 
     /* Removes flower from liveData and posts value. */
-    fun removeFlower(flower: Flower) {
-        val currentList = flowersLiveData.value
+    fun removePOI(poi: POI) {
+        val currentList = poiLiveData.value
         if (currentList != null) {
             val updatedList = currentList.toMutableList()
-            updatedList.remove(flower)
-            flowersLiveData.postValue(updatedList)
+            updatedList.remove(poi)
+            poiLiveData.postValue(updatedList)
         }
     }
 
     /* Returns flower given an ID. */
-    fun getFlowerForId(id: Long): Flower? {
-        flowersLiveData.value?.let { flowers ->
+    fun getPOIForId(id: Long): POI? {
+        poiLiveData.value?.let { flowers ->
             return flowers.firstOrNull{ it.id == id}
         }
         return null
     }
 
-    fun getFlowerList(): LiveData<List<Flower>> {
+    fun getPOIList(): LiveData<List<POI>> {
         //test create GSON
         var gson = Gson()
 
         var json = loadDataFromJson("pois.json")
-        val fooType: Type = object : TypeToken<List<Flower?>?>() {}.type
-        var objects = gson.fromJson<List<Flower>>(json,fooType)
-        flowersLiveData.value = objects
+        val fooType: Type = object : TypeToken<List<POI?>?>() {}.type
+        var objects = gson.fromJson<List<POI>>(json,fooType)
+        poiLiveData.value = objects
 
-        return flowersLiveData
+        return poiLiveData
     }
 
     /* Returns a random flower asset for flowers that are added. */
-    fun getRandomFlowerImageAsset(): Int? {
-        val randomNumber = (initialFlowerList.indices).random()
-        return initialFlowerList[randomNumber].image
+    fun getRandomPOIImageAsset(): Int? {
+        val randomNumber = (initialPOIList.indices).random()
+        return initialPOIList[randomNumber].image
     }
 
 
