@@ -1,0 +1,37 @@
+[
+  {
+    "description": "París, la capital de Francia, es una importante ciudad europea y un centro mundial del arte, la moda, la gastronomía y la cultura. Su paisaje urbano del siglo XIX está entrecruzado por amplios bulevares y el río Sena. Aparte de estos hitos, como la Torre Eiffel y la catedral gótica de Notre Dame del siglo XII, la ciudad es famosa por su cultura del café y las tiendas de moda de diseñador a lo largo de la calle Rue du Faubourg Saint-Honoré.",
+    "id": 1,
+    "image": 2131165329,
+    "name": "Paris",
+    "rating": 4.3
+  },
+  {
+    "description": "San Francisco, en el norte de California, es una ciudad montañosa en la punta de una península rodeada por el océano Pacífico y la bahía de San Francisco. Es famosa por su neblina durante todo el año, el icónico puente Golden Gate, los tranvías y las coloridas casas victorianas. La Pirámide Transamérica del Distrito Financiero es el rascacielos más característico. En la bahía, se ubica la Isla de Alcatraz, lugar de la famosa antigua prisión.",
+    "id": 2,
+    "image": 2131165330,
+    "name": "San Francisco",
+    "rate": 4.5
+  },
+  {
+    "description": "Santorini es una de las islas Cícladas en el mar Egeo. Fue devastada por una erupción volcánica en el siglo XVI a. C., que dio forma a su paisaje accidentado. Las casas cúbicas encaladas en sus 2 ciudades principales, Fira y Oia, se aferran a los acantilados sobre un cráter subterráneo. Estas tienen vista al mar, las pequeñas islas al oeste y las playas de piedras de lava blancas, rojas y negras.",
+    "id": 3,
+    "image": 2131165331,
+    "name": "Santorini",
+    "rate": 4.75
+  },
+  {
+    "description": "La India es un vasto país de Asia del Sur con un terreno diverso que abarca desde las cumbres del Himalaya hasta la costa del océano Índico. Tiene una historia de más de 5 milenios. En el norte, los monumentos históricos del imperio Mogol incluyen el complejo del Fuerte Rojo de Delhi y la enorme mezquita de Jama Masjid, junto con el icónico mausoleo del Taj Mahal en Agra. Los peregrinos se bañan en el Ganges en Varanasi, y Rishikesh es un centro de yoga y una base para las excursiones al Himalaya.",
+    "id": 4,
+    "image": 2131165332,
+    "name": "India",
+    "rate": 4.25
+  },
+  {
+    "description": "Alemania es un país de Europa occidental con un paisaje de bosques, ríos, cadenas montañosas y playas en el mar del Norte. Tiene más de 2 milenios de historia. Berlín, su capital, cuenta con sitios de arte y vida nocturna, la Puerta de Brandeburgo y muchos sitios relacionados con la Segunda Guerra Mundial. Múnich es conocida por el Oktoberfest y los salones de la cerveza, incluido el Hofbräuhaus del siglo XVI. Fráncfort, con sus rascacielos, alberga el Banco Central Europeo.",
+    "id": 5,
+    "image": 2131165333,
+    "name": "Alemania",
+    "rate": 4.8
+  }
+]

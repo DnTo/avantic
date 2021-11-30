@@ -1,39 +1,39 @@
-/*
- * Copyright (C) 2020 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-package com.avantic.pois.flowerDetail
+package com.misiontic.turismoavantic.detail
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentManager
-import com.avantic.pois.R
-import com.avantic.pois.flowerList.POI_ID
+import androidx.fragment.app.viewModels
+import com.misiontic.turismoavantic.R
+import com.misiontic.turismoavantic.databinding.FragmentDetailBinding
+import com.misiontic.turismoavantic.main.POI_ID
 
-class POIDetailActivity : AppCompatActivity() {
+class POIDetailFragment : Fragment() {
 
-    private val POIDetailViewModel by viewModels<POIDetailViewModel> {
+    private lateinit var detailBinding: FragmentDetailBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        detailBinding =  FragmentDetailBinding.inflate(inflater, container, false)
+
+        return detailBinding.root
+    }
+
+    private val POIDetailViewModel by viewModels<POIDetailFragment> {
         POIDetailViewModelFactory(this)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.poi_detail_activity)
+        setContentView(R.layout.fragment_detail)
 
         var currentPOIId: Long? = null
 
@@ -58,7 +58,7 @@ class POIDetailActivity : AppCompatActivity() {
                 poiImage.setImageResource(R.drawable.poi1)
             } else {
                 poiImage.setImageResource(currentPOI.image)
-              //  flowerImage.seti
+                //  flowerImage.seti
             }
             poiDescription.text = currentPOI?.description
             poiRate.text = currentPOI?.rate.toString()
